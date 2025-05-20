@@ -6,14 +6,14 @@ import HealthReportComponent from './HealthReport';
 
 export default function HealthForm() {
   const [formData, setFormData] = useState<HealthFormData>({
-    sleepDuration: 7,
-    exerciseFrequency: 3,
+    sleepDuration: 0,
+    exerciseFrequency: 0,
     dietQuality: 'average',
-    waterIntake: 2,
+    waterIntake: 0,
     smokingStatus: 'none',
     alcoholUse: 'none',
-    screenTime: 4,
-    mentalHealthScore: 7,
+    screenTime: 0,
+    mentalHealthScore: 0,
   });
 
   const [report, setReport] = useState<HealthReport | null>(null);

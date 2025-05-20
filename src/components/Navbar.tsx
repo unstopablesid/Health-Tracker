@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
@@ -14,7 +15,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo and Brand */}
           <div className="flex items-center">
-            <Link href="/" className="flex items-center">
+            <Link href="/" className="flex items-center space-x-2">
+              <Image
+                src="/medical-shield.svg"
+                alt="Health Tracker Logo"
+                width={32}
+                height={32}
+                className="w-8 h-8"
+              />
               <span className="text-white text-xl font-bold">Health Tracker</span>
             </Link>
           </div>

@@ -6,27 +6,7 @@ import { HealthReport } from '@/types/health';
 
 // Mock data for demonstration
 const mockReports: HealthReport[] = [
-  {
-    risks: [
-      { disease: 'Sleep Disorders', riskLevel: 70 },
-      { disease: 'Eye Strain', riskLevel: 50 }
-    ],
-    recommendations: [
-      'Maintain a consistent sleep schedule',
-      'Take regular breaks from screen time'
-    ],
-    timestamp: new Date().toISOString()
-  },
-  {
-    risks: [
-      { disease: 'Cardiovascular Disease', riskLevel: 60 }
-    ],
-    recommendations: [
-      'Exercise regularly for at least 30 minutes',
-      'Stay hydrated throughout the day'
-    ],
-    timestamp: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString() // 7 days ago
-  }
+ 
 ];
 
 export default function Dashboard() {

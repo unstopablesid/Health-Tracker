@@ -59,7 +59,8 @@ export async function POST(request: Request) {
     const report = analyzeHealthData(data);
     
     return NextResponse.json(report);
-  } catch (error) {
+  } catch (err) {
+    console.error('Error analyzing health data:', err);
     return NextResponse.json(
       { error: 'Failed to analyze health data' },
       { status: 500 }
